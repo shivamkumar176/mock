@@ -5,8 +5,8 @@ const productReducer = (state = initialData, action) => {
      return [...state,action.payload]
      case "DELETE_PRODUCT" :
        return action.payload
-       case "CART_PRODUCT":
-         return action.payload
+      //  case "CART_PRODUCT":
+      //    return action.payload
       default: return state;
   }
 };

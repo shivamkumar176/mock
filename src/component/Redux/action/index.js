@@ -30,5 +30,13 @@ export const cartProduct = (productList) => {
   };
 };
 
-
-
+// export const searchData = (data,productList) => {
+//   console.log(data);
+//   console.log(productList);
+  
+//   return 
+  // {
+  //   type:"SEARCH_DATA",
+  //   payload: 
+  // } 
+// };

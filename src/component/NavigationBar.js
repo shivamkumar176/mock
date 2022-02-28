@@ -5,7 +5,7 @@ import { Link} from "react-router-dom";
 function NavigationBar(props) {
     const goTosignIn=()=>{
         localStorage.clear();
-        props.history.push('/LoginPage');
+        props.history.push('/');
     }
   return (
     <div>
@@ -26,7 +26,7 @@ function NavigationBar(props) {
             </Nav.Link>
             <Nav.Link
               as={Link}
-              to="/LoginPage"
+              to="/"
               onClick={goTosignIn}
               className="ps-3"
             >

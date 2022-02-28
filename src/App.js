@@ -14,7 +14,7 @@ function App() {
    return (
     <BrowserRouter>
       <div>
-              <Route exact path="/" component={LoginPage} />
+        <Route exact path="/" component={LoginPage} />
         <Route
           path="/NavigationBar"
           component={localStorage.getItem("token") ? NavigationBar : LoginPage}
@@ -44,7 +44,7 @@ function App() {
           path="/NavigationBar/Cart" 
           component={localStorage.getItem("token") ? Cart : LoginPage}
         />
-        <Route exact path="/LoginPage" component={LoginPage} />
+        {/* <Route exact path="/LoginPage" component={LoginPage} /> */}
         <Route exact path="/Registration" component={Registration} />
       </div>
 
